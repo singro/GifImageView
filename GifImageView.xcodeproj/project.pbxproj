@@ -18,6 +18,9 @@
 		2971C00B17084A4800F38E32 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2971C00A17084A4800F38E32 /* Default-568h@2x.png */; };
 		2971C00E17084A4800F38E32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2971C00D17084A4800F38E32 /* ViewController.m */; };
 		2971C01117084A4800F38E32 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2971C00F17084A4800F38E32 /* ViewController.xib */; };
+		2971C01A17084A8300F38E32 /* GifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2971C01917084A8300F38E32 /* GifImageView.m */; };
+		2971C01C17084AC200F38E32 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2971C01B17084AC200F38E32 /* ImageIO.framework */; };
+		2971C01E17084BDE00F38E32 /* gintama.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2971C01D17084BDE00F38E32 /* gintama.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,10 @@
 		2971C00C17084A4800F38E32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2971C00D17084A4800F38E32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2971C01017084A4800F38E32 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		2971C01817084A8300F38E32 /* GifImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifImageView.h; sourceTree = "<group>"; };
+		2971C01917084A8300F38E32 /* GifImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifImageView.m; sourceTree = "<group>"; };
+		2971C01B17084AC200F38E32 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2971C01D17084BDE00F38E32 /* gintama.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gintama.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2971C01C17084AC200F38E32 /* ImageIO.framework in Frameworks */,
 				2971BFF517084A4800F38E32 /* UIKit.framework in Frameworks */,
 				2971BFF717084A4800F38E32 /* Foundation.framework in Frameworks */,
 				2971BFF917084A4800F38E32 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +81,7 @@
 		2971BFF317084A4800F38E32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2971C01B17084AC200F38E32 /* ImageIO.framework */,
 				2971BFF417084A4800F38E32 /* UIKit.framework */,
 				2971BFF617084A4800F38E32 /* Foundation.framework */,
 				2971BFF817084A4800F38E32 /* CoreGraphics.framework */,
@@ -83,11 +92,13 @@
 		2971BFFA17084A4800F38E32 /* GifImageView */ = {
 			isa = PBXGroup;
 			children = (
+				2971C01717084A8300F38E32 /* GifImageView */,
 				2971C00317084A4800F38E32 /* AppDelegate.h */,
 				2971C00417084A4800F38E32 /* AppDelegate.m */,
 				2971C00C17084A4800F38E32 /* ViewController.h */,
 				2971C00D17084A4800F38E32 /* ViewController.m */,
 				2971C00F17084A4800F38E32 /* ViewController.xib */,
+				2971C01D17084BDE00F38E32 /* gintama.gif */,
 				2971BFFB17084A4800F38E32 /* Supporting Files */,
 			);
 			path = GifImageView;
@@ -105,6 +116,15 @@
 				2971C00A17084A4800F38E32 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2971C01717084A8300F38E32 /* GifImageView */ = {
+			isa = PBXGroup;
+			children = (
+				2971C01817084A8300F38E32 /* GifImageView.h */,
+				2971C01917084A8300F38E32 /* GifImageView.m */,
+			);
+			path = GifImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +183,7 @@
 				2971C00917084A4800F38E32 /* Default@2x.png in Resources */,
 				2971C00B17084A4800F38E32 /* Default-568h@2x.png in Resources */,
 				2971C01117084A4800F38E32 /* ViewController.xib in Resources */,
+				2971C01E17084BDE00F38E32 /* gintama.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +197,7 @@
 				2971C00117084A4800F38E32 /* main.m in Sources */,
 				2971C00517084A4800F38E32 /* AppDelegate.m in Sources */,
 				2971C00E17084A4800F38E32 /* ViewController.m in Sources */,
+				2971C01A17084A8300F38E32 /* GifImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

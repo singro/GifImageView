@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GifImageView.h"
 
 @interface ViewController : UIViewController
 

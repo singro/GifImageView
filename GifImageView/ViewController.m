@@ -17,7 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"gintama" ofType:@"gif"];
+    GifImageView *imageView = [[GifImageView alloc] initWithPath:path];    
+    [self.view addSubview:imageView];
+
 }
 
 - (void)didReceiveMemoryWarning
